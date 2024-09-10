@@ -1,9 +1,9 @@
 from entities import Coffee, Customer
-coffee1 = Coffee("Espresso")
-coffee2 = Coffee("Latte")
+coffee1 = Coffee("french press")
+coffee2 = Coffee("Mako")
 
-customer1 = Customer("Alice")
-customer2 = Customer("Bob")
+customer1 = Customer("Lee")
+customer2 = Customer("Joshua")
 
 order1 = customer1.create_order(coffee1, 4.5)
 order2 = customer2.create_order(coffee1, 4.5)
