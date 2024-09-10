@@ -1,25 +1,24 @@
 class Customer:
     def __init__(self, name):
         self.name = name
-        self.order_history = []  # Keep track of coffees ordered and their prices
-
+        self.order_history = [] 
     def create_order(self, coffee, price):
-        coffee.add_customer(self)  # Add customer to coffee's customer list
-        coffee.record_order(price)  # Record the price of the order in the coffee class
-        self.order_history.append((coffee, price))  # Track the order
+        coffee.add_customer(self)  
+        coffee.record_order(price) 
+        self.order_history.append((coffee, price))
         return Order(coffee, price)
 
     def coffees(self):
-        # Returns a list of coffee names and their prices that this customer has ordered
+        
         return [(order[0].name, order[1]) for order in self.order_history]
 
 
 class Coffee:
     def __init__(self, name):
         self.name = name
-        self.customer_list = []   # Hold customers who ordered this coffee
-        self.total_price = 0      # Total sum of orders for this coffee
-        self.total_orders = 0     # Total number of orders for this coffee
+        self.customer_list = []   
+        self.total_price = 0    
+        self.total_orders = 0     
 
     def add_customer(self, customer):
         # Add this customer to the coffee's customer list

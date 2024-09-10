@@ -1,5 +1,5 @@
 from entities import Coffee, Customer
-coffee1 = Coffee("french press")
+coffee1 = Coffee("french coffee")
 coffee2 = Coffee("Mako")
 
 customer1 = Customer("Lee")
