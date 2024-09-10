@@ -1,3 +1,4 @@
+from entities import Order
 class Customers:
     all_customers = []
 
